@@ -1,4 +1,4 @@
-FROM ruby:2.6.2
+FROM ruby:2.6.3
 LABEL maintainer="denis.kiselyov@gmail.com"
 
 RUN apt-get update -q && apt-get install -y locales && apt-get clean
