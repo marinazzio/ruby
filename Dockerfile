@@ -1,6 +1,7 @@
-FROM ruby:2.6.3
+FROM ruby:2.6.4
 LABEL maintainer="denis.kiselyov@gmail.com"
 
+RUN gem install --no-document bundler
 RUN apt-get update -q && apt-get install -y locales && apt-get clean
 
 RUN rm -rf /var/lib/apt/lists/*
