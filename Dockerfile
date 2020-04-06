@@ -1,4 +1,4 @@
-FROM ruby:2.6.5
+FROM ruby:2.6.6
 LABEL maintainer="denis.kiselyov@gmail.com"
 
 RUN gem install --no-document bundler
